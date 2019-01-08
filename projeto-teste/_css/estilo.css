@@ -1,0 +1,1160 @@
+body {
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+nav img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 1;
+}
+
+nav ul#menu-desktop {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul#menu-desktop li {
+    list-style-type: none;
+    display: inline;
+}
+
+nav ul#menu-desktop li a {
+    padding: 30px 40px;
+    text-decoration: none;
+    color: #FFF;
+    display: inline-block;
+    margin-right: -3px;
+    font-family: Roboto, sans-serif;
+    font-size: 80%;
+    letter-spacing: 0.60
+}
+
+nav ul#menu-desktop li a:hover {
+    background-color: rgba(213,26,44,1);
+}
+
+nav ul#menu-mobile, nav div#menu-btn {
+    display: none;
+}
+
+header {
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background-image: url(../_img/foto-capa-pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+header h1 {
+    font-family: Roboto, sans-serif;
+    font-size: 400%;
+    color: white;
+    text-align: center;
+    padding-top: 25%;
+    text-shadow: 0 0 10px #000;
+    /*sombra na palavra*/
+}
+
+.busca.col-sm-6 {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1%;
+    margin-top: 10px;
+}
+
+.col-sm-6 {
+    width: 50%;
+}
+
+.busca.borda-alpha {
+}
+
+.col-sm-12 {
+    display: flex;
+    max-height: 75px;
+}
+
+form#form-buscar {
+    width: 100%;
+}
+
+input#auto-complete {
+    min-width: 340px;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.tarja img {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.sub-titulo h1 {
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.sub-titulo:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 17%;
+    background: rgb(213,26,44);
+    margin: 1px auto;
+}
+
+.inf-titulo h1 {
+    text-align: center;
+}
+
+.inf-titulo h1 {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 17%;
+    background: rgb(213,26,44);
+    margin: 1px auto;
+}
+
+main {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main section#apresentacao {
+    width: 90%;
+    max-width: 1500px;
+    min-width: 320px;
+    margin: 35px auto;
+}
+
+main section.pizzas {
+    font-family: Roboto, sans-serif;
+    width: 30%;
+    float: left;
+    background-color: #FFF;
+    box-shadow: 0 0 10px #666;
+    border-radius: 5px;
+}
+
+main section.pizzas img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: top center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+main section.pizzas h3 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+main section.pizzas p {
+    text-align: center;
+    padding: 5%;
+    margin-top: 1%;
+    color: #666;
+    font-size: 90%;
+}
+
+main section.pizzas a {
+    display: block;
+    text-align: center;
+    background-color: forestgreen;
+    color: white;
+    padding: 3%;
+    text-decoration: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+main section.direita {
+    float: right;
+}
+
+main section.centro {
+    margin-left: 5%;
+}
+
+div#rodape .container.col-sm-12 {
+    display: flex;
+    width: 100%;
+}
+
+div#rodape .col-sm-4 {
+    width: 30%;
+    padding: 6%;
+}
+
+div#rodape .col-sm-4 span {
+    font-size: 30px;
+    padding: 5px 0;
+    font-family: Roboto, sans-serif;
+    border-bottom: 1px solid rgba(213,26,44,1);
+}
+
+div#rodape .col-sm-4 svg.icon {
+    width: 20px;
+    height: 20px;
+}
+
+div#rodape ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+div#rodape li {
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+}
+
+div#rodape {
+    background: #95929230;
+    height: 35%;
+    margin-bottom: 20px;
+}
+
+div#pedido {
+    height: 90%;
+    margin-top: 1px;
+}
+
+div#pedido .janela.col-sm-12 {
+    display: flex;
+    width: 100%;
+}
+
+
+div#pedido .col-sm-6 {
+    width: 50%;
+    padding: 5%;
+    padding-top: 12%;
+}
+
+div#pedido .imagem.col-sm-6 {
+    max-width: 100%;
+    height: auto;
+}
+
+div#pedido .info.col-sm-6 {
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+
+}
+
+div#pedido .preco-produto {
+    font-family: Roboto, sans-serif;
+    color: rgb(213,26,44);
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+div#pedido .codigo-produto {
+    color: #555555;
+    font-size: 15px;
+    margin-top: -20px;
+}
+body {
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+nav img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 1;
+}
+
+nav ul#menu-desktop {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul#menu-desktop li {
+    list-style-type: none;
+    display: inline;
+}
+
+nav ul#menu-desktop li a {
+    padding: 30px 40px;
+    text-decoration: none;
+    color: #FFF;
+    display: inline-block;
+    margin-right: -3px;
+    font-family: Roboto, sans-serif;
+    font-size: 80%;
+    letter-spacing: 0.60
+}
+
+nav ul#menu-desktop li a:hover {
+    background-color: rgba(213,26,44,1);
+}
+
+nav ul#menu-mobile, nav div#menu-btn {
+    display: none;
+}
+
+header {
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background-image: url(../_img/foto-capa-pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+header h1 {
+    font-family: Roboto, sans-serif;
+    font-size: 400%;
+    color: white;
+    text-align: center;
+    padding-top: 25%;
+    text-shadow: 0 0 10px #000;
+    /*sombra na palavra*/
+}
+
+.busca.col-sm-6 {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1%;
+    margin-top: 10px;
+}
+
+.col-sm-6 {
+    width: 50%;
+}
+
+.busca.borda-alpha {
+}
+
+.col-sm-12 {
+    display: flex;
+    max-height: 75px;
+}
+
+form#form-buscar {
+    width: 100%;
+}
+
+input#auto-complete {
+    min-width: 340px;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.tarja img {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.sub-titulo h1 {
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.sub-titulo:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 17%;
+    background: rgb(213,26,44);
+    margin: 1px auto;
+}
+
+.inf-titulo h1 {
+    text-align: center;
+}
+
+.inf-titulo h1 {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 17%;
+    background: rgb(213,26,44);
+    margin: 1px auto;
+}
+
+main {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main section#apresentacao {
+    width: 90%;
+    max-width: 1500px;
+    min-width: 320px;
+    margin: 35px auto;
+}
+
+main section.pizzas {
+    font-family: Roboto, sans-serif;
+    width: 30%;
+    float: left;
+    background-color: #FFF;
+    box-shadow: 0 0 10px #666;
+    border-radius: 5px;
+}
+
+main section.pizzas img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: top center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+main section.pizzas h3 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+main section.pizzas p {
+    text-align: center;
+    padding: 5%;
+    margin-top: 1%;
+    color: #666;
+    font-size: 90%;
+}
+
+main section.pizzas a {
+    display: block;
+    text-align: center;
+    background-color: forestgreen;
+    color: white;
+    padding: 3%;
+    text-decoration: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+main section.direita {
+    float: right;
+}
+
+main section.centro {
+    margin-left: 5%;
+}
+
+div#rodape .container.col-sm-12 {
+    display: flex;
+    width: 100%;
+}
+
+div#rodape .col-sm-4 {
+    width: 30%;
+    padding: 6%;
+}
+
+div#rodape .col-sm-4 span {
+    font-size: 30px;
+    padding: 5px 0;
+    font-family: Roboto, sans-serif;
+    border-bottom: 1px solid rgba(213,26,44,1);
+}
+
+div#rodape .col-sm-4 svg.icon {
+    width: 20px;
+    height: 20px;
+}
+
+div#rodape ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+div#rodape li {
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+}
+
+div#rodape {
+    background: #95929230;
+    height: 35%;
+    margin-bottom: 20px;
+}
+
+div#pedido {
+    height: 90%;
+    margin-top: 1px;
+}
+
+div#pedido .janela.col-sm-12 {
+    display: flex;
+    width: 100%;
+}
+
+
+div#pedido .col-sm-6 {
+    width: 50%;
+    padding: 5%;
+    padding-top: 12%;
+}
+
+div#pedido .imagem.col-sm-6 {
+    max-width: 100%;
+    height: auto;
+}
+
+div#pedido .info.col-sm-6 {
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+
+}
+
+div#pedido .preco-produto {
+    font-family: Roboto, sans-serif;
+    color: rgb(213,26,44);
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+div#pedido .codigo-produto {
+    color: #555555;
+    font-size: 15px;
+    margin-top: -20px;
+}
+
+div#pedido .qtde-adicionar-carrinho {
+    width: auto;
+    text-align: left;
+}
+
+div#pedido .qtde-carrinho {    
+    width: 60px;  
+    height: 35px;    
+    border-radius: 15px;    
+    border: solid 2px #e0e0e0;    
+    box-sizing: border-box;   
+    color: #000000;    
+    font-size: 14px;    
+    font-weight: 600;    
+    padding-right: 10px;    
+    margin-top: 47px;
+    text-align: center;
+}
+
+div#pedido .botao {
+    background-color: rgb(213,26,44);
+    border-radius: 30px;
+    width: 73%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+}
+body {
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+nav img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 1;
+}
+
+nav ul#menu-desktop {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul#menu-desktop li {
+    list-style-type: none;
+    display: inline;
+}
+
+nav ul#menu-desktop li a {
+    padding: 30px 40px;
+    text-decoration: none;
+    color: #FFF;
+    display: inline-block;
+    margin-right: -36px;
+    font-family: Roboto, sans-serif;
+    font-size: 80%;
+    letter-spacing: 0.60
+}
+
+nav ul#menu-desktop li a:hover {
+    background-color: rgba(213,26,44,1);
+}
+
+nav ul#menu-mobile, nav div#menu-btn {
+    display: none;
+}
+
+header {
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background-image: url(../_img/foto-capa-pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+header h1 {
+    font-family: Roboto, sans-serif;
+    font-size: 400%;
+    color: white;
+    text-align: center;
+    padding-top: 25%;
+    text-shadow: 0 0 10px #000;
+    /*sombra na palavra*/
+}
+
+.busca.col-sm-6 {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1%;
+    margin-top: 10px;
+}
+
+.col-sm-6 {
+    width: 50%;
+}
+
+.busca.borda-alpha {
+}
+
+.col-sm-12 {
+    display: flex;
+    max-height: 75px;
+}
+
+form#form-buscar {
+    width: 100%;
+}
+
+input#auto-complete {
+    min-width: 340px;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.tarja img {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.sub-titulo h1 {
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.sub-titulo:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 17%;
+    background: rgb(213,26,44);
+    margin: 1px auto;
+}
+
+.inf-titulo h1 {
+    text-align: center;
+}
+
+.inf-titulo h1 {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 17%;
+    background: rgb(213,26,44);
+    margin: 1px auto;
+}
+
+main {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main section#apresentacao {
+    width: 90%;
+    max-width: 1500px;
+    min-width: 320px;
+    margin: 35px auto;
+}
+
+main section.pizzas {
+    font-family: Roboto, sans-serif;
+    width: 30%;
+    float: left;
+    background-color: #FFF;
+    box-shadow: 0 0 10px #666;
+    border-radius: 5px;
+}
+
+main section.pizzas img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: top center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+main section.pizzas h3 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+main section.pizzas p {
+    text-align: center;
+    padding: 5%;
+    margin-top: 1%;
+    color: #666;
+    font-size: 90%;
+}
+
+main section.pizzas a {
+    display: block;
+    text-align: center;
+    background-color: forestgreen;
+    color: white;
+    padding: 3%;
+    text-decoration: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+main section.direita {
+    float: right;
+}
+
+main section.centro {
+    margin-left: 5%;
+}
+
+div#rodape .container.col-sm-12 {
+    display: flex;
+    width: 100%;
+}
+
+div#rodape .col-sm-4 {
+    width: 30%;
+    padding: 6%;
+}
+
+div#rodape .col-sm-4 span {
+    font-size: 30px;
+    padding: 5px 0;
+    font-family: Roboto, sans-serif;
+    border-bottom: 1px solid rgba(213,26,44,1);
+}
+
+div#rodape .col-sm-4 svg.icon {
+    width: 20px;
+    height: 20px;
+}
+
+div#rodape ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+div#rodape li {
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+}
+
+div#rodape {
+    background: #95929230;
+    height: 35%;
+    margin-bottom: 20px;
+}
+
+div#pedido {
+    height: 90%;
+    margin-top: 1px;
+}
+
+div#pedido .janela.col-sm-12 {
+    display: flex;
+    width: 100%;
+}
+
+
+div#pedido .col-sm-6 {
+    width: 50%;
+    padding: 5%;
+    padding-top: 12%;
+}
+
+div#pedido .imagem.col-sm-6 {
+    max-width: 100%;
+    height: auto;
+}
+
+div#pedido .info.col-sm-6 {
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+
+}
+
+div#pedido .preco-produto {
+    font-family: Roboto, sans-serif;
+    color: rgb(213,26,44);
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+div#pedido .codigo-produto {
+    color: #555555;
+    font-size: 15px;
+    margin-top: -20px;
+}
+body {
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+nav img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 1;
+}
+
+nav ul#menu-desktop {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul#menu-desktop li {
+    list-style-type: none;
+    display: inline;
+}
+
+nav ul#menu-desktop li a {
+    padding: 30px 40px;
+    text-decoration: none;
+    color: #FFF;
+    display: inline-block;
+    margin-right: -30px;
+    font-family: Roboto, sans-serif;
+    font-size: 80%;
+    letter-spacing: 0.60;
+}
+
+nav ul#menu-desktop li a:hover {
+    background-color: rgba(213,26,44,1);
+}
+
+nav ul#menu-mobile, nav div#menu-btn {
+    display: none;
+}
+
+header {
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background-image: url(../_img/foto-capa-pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+header h1 {
+    font-family: Roboto, sans-serif;
+    font-size: 400%;
+    color: white;
+    text-align: center;
+    padding-top: 25%;
+    text-shadow: 0 0 10px #000;
+    /*sombra na palavra*/
+}
+
+.busca.col-sm-6 {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1%;
+    margin-top: 10px;
+}
+
+.col-sm-6 {
+    width: 50%;
+}
+
+.busca.borda-alpha {
+}
+
+.col-sm-12 {
+    display: flex;
+    max-height: 75px;
+}
+
+form#form-buscar {
+    width: 100%;
+}
+
+input#auto-complete {
+    min-width: 340px;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.tarja img {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.sub-titulo h1 {
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.sub-titulo:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 17%;
+    background: rgb(213,26,44);
+    margin: 1px auto;
+}
+
+.inf-titulo h1 {
+    text-align: center;
+}
+
+.inf-titulo h1 {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 17%;
+    background: rgb(213,26,44);
+    margin: 1px auto;
+}
+
+main {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main section#apresentacao {
+    width: 90%;
+    max-width: 1500px;
+    min-width: 320px;
+    margin: 35px auto;
+}
+
+main section.pizzas {
+    font-family: Roboto, sans-serif;
+    width: 30%;
+    float: left;
+    background-color: #FFF;
+    box-shadow: 0 0 10px #666;
+    border-radius: 5px;
+}
+
+main section.pizzas img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: top center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+main section.pizzas h3 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+main section.pizzas p {
+    text-align: center;
+    padding: 5%;
+    margin-top: 1%;
+    color: #666;
+    font-size: 90%;
+}
+
+main section.pizzas a {
+    display: block;
+    text-align: center;
+    background-color: forestgreen;
+    color: white;
+    padding: 3%;
+    text-decoration: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+main section.direita {
+    float: right;
+}
+
+main section.centro {
+    margin-left: 5%;
+}
+
+div#rodape .container.col-sm-12 {
+    display: flex;
+    width: 100%;
+}
+
+div#rodape .col-sm-4 {
+    width: 30%;
+    padding: 6%;
+}
+
+div#rodape .col-sm-4 span {
+    font-size: 30px;
+    padding: 5px 0;
+    font-family: Roboto, sans-serif;
+    border-bottom: 1px solid rgba(213,26,44,1);
+}
+
+div#rodape .col-sm-4 svg.icon {
+    width: 20px;
+    height: 20px;
+}
+
+div#rodape ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+div#rodape li {
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+}
+
+div#rodape {
+    background: #95929230;
+    height: 35%;
+    margin-bottom: 20px;
+}
+
+div#pedido {
+    height: 90%;
+    margin-top: 1px;
+}
+
+div#pedido .janela.col-sm-12 {
+    display: flex;
+    width: 100%;
+}
+
+
+div#pedido .col-sm-6 {
+    width: 50%;
+    padding: 5%;
+    padding-top: 12%;
+}
+
+div#pedido .imagem.col-sm-6 {
+    max-width: 100%;
+    height: auto;
+}
+
+div#pedido .info.col-sm-6 {
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+
+}
+
+div#pedido .preco-produto {
+    font-family: Roboto, sans-serif;
+    color: rgb(213,26,44);
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+div#pedido .codigo-produto {
+    color: #555555;
+    font-size: 15px;
+    margin-top: -20px;
+}
+
+div#pedido .qtde-adicionar-carrinho {
+    width: auto;
+    text-align: left;
+}
+
+div#pedido .qtde-carrinho {    
+    width: 60px;  
+    height: 35px;    
+    border-radius: 15px;    
+    border: solid 2px #e0e0e0;    
+    box-sizing: border-box;   
+    color: #000000;    
+    font-size: 14px;    
+    font-weight: 600;    
+    padding-right: 10px;    
+    margin-top: 47px;
+    text-align: center;
+}
+
+div#pedido .botao {
+    background-color: rgb(179, 29, 44);
+    border-radius: 12px;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.descricao h1 {
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.descricao h1:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 17%;
+    background: rgb(213,26,44);
+    margin: 1px auto;
+}
+
+.descricao h2 {
+    font-size: 18px;
+    color: #333333e0;
+    margin: 24px 100px 10px;
+    width: 80%;
+    text-align: left;
+}
